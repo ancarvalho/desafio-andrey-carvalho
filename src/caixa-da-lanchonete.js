@@ -45,9 +45,7 @@ class CaixaDaLanchonete {
 				throw "Item inválido!"
 			}
 
-			if (product.depends_on != undefined) {
-				this.checkIfDependencyIsSatisfied(items, product.depends_on)
-			}
+			if (product.depends_on != undefined && this.checkIfDependencyIsSatisfied(items, product.depends_on));
 			total += product.value * quantity
 		}
 		return total
@@ -68,7 +66,7 @@ class CaixaDaLanchonete {
 
 	formatToBrazilianReal(value) {
 		// "fix" to a problem caused by value "36.565" was rounded to "36.57"
-		return Number.parseFloat(Number.parseFloat(value).toFixed(2)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL',  maximumFractionDigits: 2});
+		return Number.parseFloat(Number.parseFloat(value).toFixed(2)).toLocaleString('pt-br', { style: 'currency', currency: 'BRL', maximumFractionDigits: 2 });
 
 	}
 
