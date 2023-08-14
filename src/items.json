@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "cod": "cafe",
+            "desc": "Café",
+            "value": 3.00
+        },
+        {
+            "cod": "chantily",
+            "desc": "Chantily (extra do Café)",
+            "value": 1.50,
+            "depends_on": "cafe"
+        },
+        {
+            "cod": "suco",
+            "desc": "Suco Natural",
+            "value": 6.20
+        },
+        {
+            "cod": "sanduiche",
+            "desc": "Sanduíche",
+            "value": 6.50
+        },
+        {
+            "cod": "queijo",
+            "desc": "Queijo (extra do Sanduíche)",
+            "value": 2.00,
+            "depends_on": "sanduiche"
+        },
+        {
+            "cod": "salgado",
+            "desc": "Salgado",
+            "value": 7.25
+        },
+        {
+            "cod": "combo1",
+            "desc": "1 Suco e 1 Sanduíche",
+            "value": 9.50
+        },
+        {
+            "cod": "combo2",
+            "desc": "1 Café e 1 Sanduíche",
+            "value": 7.50
+        }
+    ]
+}
